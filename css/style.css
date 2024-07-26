@@ -6,8 +6,8 @@ html {
     font-size: 100%;
 }
 body{
-    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    line-height: 1;
+    font-family: "Yu Gothic", "游ゴシック", "YuMincho","Meiryo", sans-serif;;
+    line-height: 1.5;
     color: #432;
 }
 a {
@@ -31,20 +31,22 @@ img {
 /* 見出し */
 .page-title {
     font-size: 3rem;
-    font-weight: normal;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 10%
+    line-height: 3.5rem;
 }
 .sub-title {
     font-size: 1.375rem;
     padding: 0 8px 8px;
     border-bottom: 2px #e7e700 solid;
     font-weight: normal;
+    line-height: 20px;
 }
 
 /* ボタン */
 .button {
+    font-weight:bold;
     font-size: 1rem;
     background: #ffde59;
     color: #432;
@@ -71,6 +73,7 @@ iframe {
     margin-top: 10px;
 }
 .main-nav {
+    font-weight:bold;
     position:relative;
     display: flex;
     font-size: 1.25rem;
@@ -108,6 +111,7 @@ iframe {
     min-height: 100vh;
 }
 #home .page-title {
+    font-family: "Yu Mincho";
     text-transform: none;
     text-align: left;
 }
@@ -117,14 +121,13 @@ iframe {
 }
 
 .home-content p {
+    font-family: "Yu Mincho";
     font-size: 1.125rem;
-    margin: 10px 0 42px;
+    margin: 15px 0 42px;
     text-align: left;
 }
 
 .btn {
-    position: relative;
-    top: 50px;
     text-align: right;
 }
 
@@ -132,17 +135,26 @@ iframe {
 ------------------------------- */
 #news {
     background-image: url(../images/news-bg.jpg);
-    height: 270px;
+    height: 400px;
     margin-bottom: 40px;
 }
+
 #news .page-title {
+    margin-top:40px
+}
+
+.explanation {
+    font-size: 1.125rem;
+    margin: 30px 0 0;
     text-align: center;
 }
+
 .news-contents {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
 
 /* 記事部分 */
 article {
@@ -150,7 +162,7 @@ article {
 }
 .post-info {
     position: relative;
-    padding-top: 30px;
+    padding-top: 15px;
     margin-bottom: 40px;
 }
 .post-date {
@@ -159,33 +171,35 @@ article {
     color: #432;
     width: 100px;
     height: 100px;
-    font-size: 1.625rem;
+    font-size: 1.6rem;
     text-align: center;
     position: absolute;
     top: 0;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 .post-date span {
     font-size: 1rem;
     border-top: 1px rgba(255,255,255,.5) solid;
-    padding-top: 6px;
+    padding-top: 5px;
     display: block;
     width: 60%;
-    margin: 10px auto;
+    margin: 1px auto;
 }
 .post-title {
-    font-family: "Yu Mincho", "YuMincho", serif;
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: bold;
 }
 .post-title,
 .post-cat {
-    margin-left: 120px;
+    margin-left: 130px;
 }
+
 article img {
     margin-bottom: 20px;
 }
-article p {
+
+.post-text {
+    line-height: 30px;
     margin-bottom: 1rem;
 }
 
@@ -193,6 +207,11 @@ article p {
 aside {
     width: 22%;
 }
+
+.sub-title {
+    font-weight: bold;
+}
+
 .sub-menu {
     margin-bottom: 60px;
     list-style: none;
@@ -210,42 +229,51 @@ aside {
 }
 aside p {
     padding: 12px 10px;
+    line-height: 25px;
 }
 
 /* MENU
 ------------------------------- */
 #menu {
     background-image: url(../images/menu-bg.png);
-    min-height: 100vh;
+    height: 400px;
+    margin-bottom: 40px;
+    }
+
+#menu .page-title {
+    margin-top:40px
 }
+
+
 .menu-content {
     max-width: 700px;
-    margin-top: 10%;
 }
-.menu-content .page-title {
-    text-align: center;
-}
+
 .menu-content p {
     font-size: 1.125rem;
-    margin: 50px 0 0;
+    margin: 30px 0 0;
     text-align: center;
 }
 
 .grid {
     display: grid;
-    gap: 26px;
+    gap: 35px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin-top: 6%;
     margin-bottom: 50px;
     text-align: center;
-
 }
 
 /* CONTACT
 ------------------------------- */
 #contact {
-    background-image: url(../images/contact-bg.jpg);
+    background-image: url(../images/contact-bg.png);
     min-height: 100vh;
+}
+
+#contact .page-title {
+    text-align: left;
+    margin: 10px 0;
 }
 
 /* フォーム */
@@ -257,24 +285,25 @@ label {
     margin-bottom: 10px;
     display: block;
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
     background: rgba(255,255,255,.5);
-    border: 1px #fff solid;
-    border-radius: 5px;
-    padding: 10px;
+    border: px #fff solid;
+    border-radius: 0px;
+    padding: 8px;
     font-size: 1rem;
 }
 input[type="text"],
 input[type="email"] {
     width: 100%;
-    max-width: 240px;
+    max-width: 500px;
 }
 textarea {
     width: 100%;
-    max-width: 480px;
-    height: 6rem;
+    max-width: 500px;
+    height: 4rem;
 }
 input[type="submit"] {
     border: none;
@@ -282,7 +311,7 @@ input[type="submit"] {
     line-height: 1;
 }
 
-/* 店舗情報・地図 */
+/* 店舗情報*/
 #location {
     padding: 4% 0;
 }
@@ -290,31 +319,11 @@ input[type="submit"] {
     display: flex;
     justify-content: space-between;
 }
+
 .location-info {
-    width: 22%;
-}
-.location-info p {
-    padding: 12px 10px;
-}
-.location-map {
-    width: 74%;
+    width: 50%;
 }
 
-/* SNS */
-#sns {
-    background: #FAF7F0;
-    padding: 4% 0;
-}
-#sns .wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-#sns .sub-title {
-    margin-bottom: 30px;
-}
-.sns-box {
-    width: 30%;
-}
 
 /* フッター
 ------------------------------- */
@@ -323,6 +332,18 @@ footer {
     text-align: center;
     padding: 26px 0;
 }
+
+.sns-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sns-btn li {
+    width: 30px;
+    margin: 0 10px;
+}
+
 footer p {
     color: #fff;
     font-size: 0.875rem;
