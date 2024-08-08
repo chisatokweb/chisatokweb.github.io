@@ -159,6 +159,7 @@ iframe {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     margin-top: 3%;
     margin-bottom: 50px;
+    margin-left: 10%;
 }
 
 .top-post-cat {
@@ -168,7 +169,7 @@ iframe {
 /* サイドバー */
 .top-aside {
     width: 22%;
-    margin-right: 74px;
+    margin-right: 10%;
 }
 
 .top-sub-title {
@@ -251,7 +252,6 @@ article {
     width: 15%;
 }
 
-
 article img {
     margin-bottom: 20px;
 }
@@ -265,7 +265,7 @@ article img {
 /* サイドバー */
 .cate-aside {
     width: 22%;
-    margin-right: px;
+    margin-right: 0%;
 }
 
 .cate-sub-title {
