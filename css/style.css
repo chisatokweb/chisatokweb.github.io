@@ -8,7 +8,7 @@ html {
 body{
     font-family: "Yu Gothic", "游ゴシック", "YuMincho","Meiryo", sans-serif;;
     line-height: 1.5;
-    color: #432;
+    color: #000;
 }
 a {
     text-decoration: none;
@@ -39,7 +39,7 @@ img {
 .sub-title {
     font-size: 1.375rem;
     padding: 0 8px 8px;
-    border-bottom: 2px #e7e700 solid;
+    border-bottom: 2px  #000 solid;
     font-weight: normal;
     line-height: 20px;
 }
@@ -49,11 +49,11 @@ img {
     font-weight:bold;
     font-size: 1rem;
     background: #ffde59;
-    color: #432;
+    color: #000;
     padding: 18px 32px;
 }
 .button:hover {
-    background: #432;
+    background: #000;
     color: #fff;
 }
 
@@ -83,10 +83,10 @@ iframe {
 }
 
 .main-nav a {
-    color: #432;
+    color:  #000;
 }
 .main-nav a:hover {
-    color: #432;
+    color:  #000;
 }
 .main-nav li {
     margin-left: 36px;
@@ -118,6 +118,7 @@ iframe {
 .home-content p {
     font-family: "Yu Mincho";
     font-size: 1.125rem;
+    font-weight: bold;
     margin: 15px 0 42px;
     text-align: left;
 }
@@ -140,18 +141,75 @@ iframe {
 
 .explanation {
     font-size: 1.125rem;
+    font-weight: bold;
     margin: 30px 0 0;
     text-align: center;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.news-list {
+    width: 65%;
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 3%;
+    margin-bottom: 50px;
+}
+
+.top-post-cat {
+    width: 30%;
+}
+
+/* サイドバー */
+.top-aside {
+    width: 22%;
+    margin-right: 74px;
+}
+
+.top-sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px  #000 solid;
+    font-weight: bold;
+    line-height: 20px;
+    margin-right: 21%;
+}
+
+.top-sub-menu {
+    margin-right: 20%;
+    margin-bottom: 60px;
+    list-style: none;
+}
+.top-sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.top-sub-menu a {
+    color: #000;
+    padding: 10px;
+    display: block;
+}
+.top-sub-menu a:hover {
+    color: #ffde59;
+}
+.top-aside p {
+    padding: 12px 10px;
+    line-height: 25px;
+}
+
+
+/* CATGORY 記事
+------------------------------- */
 .news-contents {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-
-/* 記事部分 */
 article {
     width: 74%;
 }
@@ -163,7 +221,7 @@ article {
 .post-date {
     background: #ffde59;
     border-radius: 50%;
-    color: #432;
+    color: #000;
     width: 100px;
     height: 100px;
     font-size: 1.6rem;
@@ -189,6 +247,11 @@ article {
     margin-left: 130px;
 }
 
+.post-cat {
+    width: 15%;
+}
+
+
 article img {
     margin-bottom: 20px;
 }
@@ -198,34 +261,43 @@ article img {
     margin-bottom: 1rem;
 }
 
+
 /* サイドバー */
-aside {
+.cate-aside {
     width: 22%;
+    margin-right: px;
 }
 
-.sub-title {
+.cate-sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px  #000 solid;
     font-weight: bold;
+    line-height: 20px;
+    margin-right: %;
 }
 
-.sub-menu {
+.cate-sub-menu {
+    margin-right: %;
     margin-bottom: 60px;
     list-style: none;
 }
-.sub-menu li {
+.cate-sub-menu li {
     border-bottom: 1px #ddd solid;
 }
-.sub-menu a {
-    color: #432;
+.cate-sub-menu a {
+    color: #000;
     padding: 10px;
     display: block;
 }
-.sub-menu a:hover {
+.cate-sub-menu a:hover {
     color: #ffde59;
 }
-aside p {
+.cate-aside p {
     padding: 12px 10px;
     line-height: 25px;
 }
+
 
 /* MENU
 ------------------------------- */
@@ -236,7 +308,7 @@ aside p {
     }
 
 #menu .page-title {
-    margin-top:30px
+    margin-top:30px;
 }
 
 .menu-content {
@@ -245,6 +317,7 @@ aside p {
 
 .menu-content p {
     font-size: 1.125rem;
+    font-weight: bold;
     margin: 30px 0 0;
     text-align: center;
 }
@@ -322,7 +395,7 @@ input[type="submit"] {
 /* フッター
 ------------------------------- */
 footer {
-    background: #432;
+    background: #000;
     text-align: center;
     padding: 26px 0;
 }
@@ -423,6 +496,45 @@ footer p {
     .post-cat {
         margin-left: 80px;
     }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+
+    /* サイドバー */
+    .top-aside {
+        width: 74%;
+        margin-left: 80px;
+    }
+
+    .top-sub-title {
+        margin-right: 21%;
+    }
+
+    .top-sub-menu {
+        margin-right: 20%;
+    }
+
+    /* CATGORY 記事
+------------------------------- */
+
+    /* サイドバー */
+    .cate-aside {
+        width: 74%;
+        margin-left: 80px;
+    }
+
+    .cate-sub-title {
+        margin-right: 21%;
+    }
+
+    .cate-sub-menu {
+        margin-right: 20%;
+    }
+
 
     /* MENU */
     .menu-content {
