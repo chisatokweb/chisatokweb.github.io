@@ -439,6 +439,11 @@ footer p {
     /* HOME */
     .home-content {
         margin-top: 30%;
+        width:100% ;
+    }
+
+    .home-content h2 {
+        font-size: 2.156rem;
     }
 
     .home-content p {
