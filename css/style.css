@@ -252,6 +252,7 @@ article {
     width: 15%;
 }
 
+
 article img {
     margin-bottom: 20px;
 }
@@ -265,7 +266,7 @@ article img {
 /* サイドバー */
 .cate-aside {
     width: 22%;
-    margin-right: 0%;
+    margin-right: px;
 }
 
 .cate-sub-title {
